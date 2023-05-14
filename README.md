@@ -20,13 +20,14 @@ Manages the stages and turn of the player is the monsters and updates the screen
 Board.h/cpp – The department tasked with building and maintaining the game board.
 Updates the location of the Digger and the locations of theMonsters that the controller can update with him.
 In addition, 1)initiates a new phase and 2)restores the phase again
-GraphicObject.h/cpp-
+
+1.GraphicObject.h/cpp-
 This is our base class from which most classes inherit the basic functions such as draw,setpos,setsize..
-GameObject.h/cpp
+2.GameObject.h/cpp
 This class of objects has here the functions of the conflicts between the objects, it inherits from GraphicObject
-MovingObject.h/cpp
+3.MovingObject.h/cpp
 It's the class of objects that move likeDigger monsters that handles all their movement and allcollisions, and their clock.
-Digger.h/cpp – The department that represents the player.
+4.Digger.h/cpp – The department that represents the player.
 Contains set get functions to get a player's location and initialize their position.
 In addition, theMove function checks which key the player presses and whether it is possible to move there.
 If it does, moves the player to the new location.
