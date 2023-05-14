@@ -23,9 +23,9 @@ In addition, 1)initiates a new phase and 2)restores the phase again
 
 
 #### Key data structures and their function:
-1.vector of levels in the game control
-2.vector of monsters in the board
-3.vector of unmovable objects in the board
+- vector of levels in the game control
+- vector of monsters in the board
+- vector of unmovable objects in the board
 
 ##### Notable algorithms:
 Each smart monster when is its turn to move, calculates the distance from every available spot that.
