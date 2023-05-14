@@ -27,4 +27,4 @@ We originally developed the algorithm to let the monster stay in its location if
 It should be noted that the creatures will only stay in their place if they have no feasible method to move..
 
 ###### Known bugs:
-None.
+Smart Monster chase can be improve.
