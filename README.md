@@ -1,25 +1,16 @@
 # BatmanGameGeneral explanation of the exercise:
-In this exercise we were asked to build a version of theDigger game, the Digger has to eat diamonds, and be careful not to be eaten by monsters, and is allowed to eat stones in a limited amount given to him at the beginning of each stage. If the digger is eaten by a monster, we reboot the diggerand monsters to their initial location at that point.
-The game also runs by time, each stage has a different time, if the time runs out we reboot the stage and take it down to fish for life. 
-The digger will also be able to eat gifts and this will add life, time, stones that are allowed to be eaten.
-If the digger eats more stones than it is allowed to, the stage is rebooted and returns the digger, monsters, and diamonds to the beginning of the stage.
-As long as the player has life remaining, he continues and progresses through the stages inserted into him in the file "Board.txt
-## Design:
-We built a game run by , Controller It uses the memory of the BORAD
-And we built aboard department, which helpscontrollers manage the game in an "object-oriented" programming form by dividing into objects, and each object has its own functions.
-We also have aResourceManager class which runs in Singletonstyle whichis initialized only once and reads all files needed for the game like images,FONT,music,SPRITESHEET.
-And we have classes for every object in the game like monsters,digger,gifts, wall, stones
-We also used thedouble-dispatch method to check conflicts betweenthe objects in the game.
+In this project, we were required to create a version of the game "The Digger," in which the player controls a character who must consume diamonds while avoiding monster attacks and is given a set number of stones to eat at the start of each stage. We reboot the digger and monsters to their original locations if the digger is consumed by a monster.
+The game also has a time limit; if the time limit expires, the stage is restarted and taken down to the "fish for life" screen. 
+Additionally, the digger will be able to consume gifts, which will increase life, time, and the number of stones that may be consumed.
+if the digger consumes more stones than it is permitted to the player will have to start over the level.
 
-### Step file format:
-We read the steps from a file inResourceswhere we draw the steps that we are
-We want to play, so if you want to add a step, just go to this file and draw the stage you want.
-List of files created by us:
-Controller.h/cpp–The department that manages the game:It uses the memory of theBOARD
-Manages the stages and turn of the player is the monsters and updates the screen accordingly.
-Board.h/cpp – The department tasked with building and maintaining the game board.
-Updates the location of the Digger and the locations of theMonsters that the controller can update with him.
-In addition, 1)initiates a new phase and 2)restores the phase again
+## Design:
+We created a game controlled by a controller. It makes use of the BORAD's memory.
+Additionally, we created a department that assists controllers in managing the game in a "object-oriented" programming manner by breaking it up into objects, each of which has distinct functions.
+Additionally, we have a ResourceManager class that runs in Singleton mode, reads all game-related files including photos, FONT, music, and SPRITESHEET, and is initialized just once.
+Additionally, there are classes for every item in the game, including monsters, dig tools, gifts, walls, and stones.
+In order to check for conflicts between the game's objects, we also employed the double-dispatch mechanism
+
 
 
 #### Key data structures and their function:
